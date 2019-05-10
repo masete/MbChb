@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::resource('billboards', 'BillboardsController');
+Route::get('gmaps', 'GmapsController@gmaps');
