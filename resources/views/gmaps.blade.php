@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Laravel 5 - Multiple markers in google map using gmaps.js</title>
+	<title>Home</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="http://maps.google.com/maps/api/js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.24/gmaps.js"></script>
@@ -20,7 +20,7 @@
 <body>
 
 
-  <h1>Laravel 5 - Multiple markers in google map using gmaps.js</h1>
+  <h1>Showing billboard pointers on the map.</h1>
 
 
   <div id="mymap"></div>
@@ -46,7 +46,7 @@
 	      lng: value.lng,
 	      title: value.city,
 	      click: function(e) {
-	        alert('This is '+value.city+', gujarat from India.');
+	        alert('This is '+value.city+', gujarat from Uganda.');
 	      }
 	    });
    });

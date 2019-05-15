@@ -15,5 +15,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('billboards', 'BillboardsController');
-Route::get('gmaps', 'GmapsController@gmaps');
+Route::get('/gmaps', function () {
+    return view('gmaps');
+});
+
+Route::get('/home', function () {
+    return view('home');
+});
+
+Route::get('/pages/addbillboard', function () {
+    return view('pages/addbillboard');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
