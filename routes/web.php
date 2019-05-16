@@ -15,17 +15,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/gmaps', function () {
-    return view('gmaps');
+// Route::get('/gmaps', function () {
+//     return view('gmaps');
+// });
+
+// Route::get('/home', function () {
+//     return view('home');
+// });
+
+Route::get('addbillboard', function () {
+    return view('addbillboard');
 });
 
-Route::get('/home', function () {
-    return view('home');
-});
+Auth::routes();
 
-Route::get('/pages/addbillboard', function () {
-    return view('pages/addbillboard');
-});
+Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
