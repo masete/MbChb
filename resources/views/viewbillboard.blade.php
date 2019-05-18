@@ -19,13 +19,13 @@
               <div class="card-body">
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
-                  <tr>
-                    <th>Rendering engine</th>
-                    <th>Browser</th>
-                    <th>Platform(s)</th>
-                    <th>Engine version</th>
-                    <th>CSS grade</th>
-                  </tr>
+                    <tr>
+                      <th>Site code</th>
+                      <th>Company</th>
+                      <th>District</th>
+                      <th>Region</th>
+                      <th>Site Type</th>
+                    </tr>
                   </thead>
                   <tbody>
                   <tr>
@@ -438,11 +438,11 @@
                   </tbody>
                   <tfoot>
                   <tr>
-                    <th>Rendering engine</th>
-                    <th>Browser</th>
-                    <th>Platform(s)</th>
-                    <th>Engine version</th>
-                    <th>CSS grade</th>
+                    <th>Site code</th>
+                    <th>Company</th>
+                    <th>District</th>
+                    <th>Region</th>
+                    <th>Site Type</th>
                   </tr>
                   </tfoot>
                 </table>

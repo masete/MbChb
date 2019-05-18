@@ -7,12 +7,12 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Edit Billboards</h1>
+          <h1>Update Clients</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="home">Home</a></li>
-            <li class="breadcrumb-item active">Edit Billboards</li>
+            <li class="breadcrumb-item active">Update Clients</li>
           </ol>
         </div>
       </div>
@@ -32,8 +32,8 @@
                 <table id="example2" class="table table-bordered table-hover">
                   <thead>
                   <tr>
-                    <th>Site Code</th>
                     <th>Company</th>
+                    <th>Billboards</th>
                     <th>District</th>
                     <th>Region</th>
                     <th>Site Type</th>
