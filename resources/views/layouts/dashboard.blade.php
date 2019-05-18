@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>INSYTMEDIA | @yield('title')</title>
+  <title>INSYTMEDIA | Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -179,7 +179,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
 
-            <a href="home" class="nav-link active">
+            <a href="#" class="nav-link active">
             <i class="nav-icon fa fa-dashboard"></i>
             <p>
               Dashboard
@@ -202,13 +202,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="editbillboard" class="nav-link">
+                <a href="./index2.html" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Edit Billboard</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="viewbillboard" class="nav-link">
+                <a href="./index3.html" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>View Billboard</p>
                 </a>
@@ -226,19 +226,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="addreport" class="nav-link active">
+                <a href="addbillboard" class="nav-link active">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Create Report</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="editreport" class="nav-link">
+                <a href="./index2.html" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Edit Report</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="viewreport" class="nav-link">
+                <a href="./index3.html" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>View Repoort</p>
                 </a>
@@ -256,19 +256,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="addclient" class="nav-link active">
+                <a href="addbillboard" class="nav-link active">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Add Clients</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="editclient" class="nav-link">
+                <a href="./index2.html" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Edit Clients</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="viewclient" class="nav-link">
+                <a href="./index3.html" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>View Clients</p>
                 </a>
@@ -277,7 +277,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="settings" class="nav-link">
+            <a href="pages/widgets.html" class="nav-link">
               <i class="nav-icon fa fa-th"></i>
           <p>Settings
             {{-- <i class="right fa fa-angle-left"></i> --}}
@@ -300,9 +300,7 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    @section('content')
-
-    @show
+    @yield('content')
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
@@ -359,18 +357,5 @@
 <script src="{{ asset('dist/js/pages/dashboard.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('dist/js/demo.js')}}"></script>
-<script>
-  $(function () {
-    $("#example1").DataTable();
-    $('#example2').DataTable({
-      "paging": true,
-      "lengthChange": false,
-      "searching": false,
-      "ordering": true,
-      "info": true,
-      "autoWidth": false
-    });
-  });
-</script>
 </body>
 </html>
